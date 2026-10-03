@@ -1,0 +1,12 @@
+Parameter,Nilai,Keterangan
+Model SARIMA,"SARIMA(2, 1, 0)(1, 1, 0, 12)",Konfigurasi SARIMA yang dibekukan pada Final
+Training,75,70% dari 108 observasi sumber
+Testing,33,30% dari 108 observasi sumber
+Validation,12,12 observasi terakhir pada training
+Metode FTS,Chen weighted consequent,Komponen Fuzzy Time Series pada hybrid
+Window 6,6 → 1,Jumlah observasi historis untuk komponen FTS
+n_intervals Window 6,8,Dipilih berdasarkan validation
+alpha Window 6,0.96,Bobot SARIMA pada weighted ensemble
+Window 12,12 → 1,Jumlah observasi historis untuk komponen FTS
+n_intervals Window 12,11,Dipilih berdasarkan validation
+alpha Window 12,0.97,Bobot SARIMA pada weighted ensemble
